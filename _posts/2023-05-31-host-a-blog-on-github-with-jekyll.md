@@ -1,5 +1,5 @@
 ---
-title: Static Blog Website Hosted On GitHub Pages Built With Jekyll
+title: Build A Static Blog Website Hosted On GitHub Pages With Jekyll
 date: 2023-06-01 12:00:00 -0500
 categories: [How-to, GitHub]
 tags: [github,jekyll,blog]     # TAG names should always be lowercase
@@ -170,7 +170,7 @@ categories: [TOP_CATEGORIE, SUB_CATEGORIE]
 tags: [TAG]     # TAG names should always be lowercase
 ---
 ```
-* Write your blog
+* Write your blog article
 
 There are a lot of additional post config options available. See the developer's documentation above for details.
 
@@ -185,6 +185,10 @@ bundle exec jekyll s
 ```
 
 Test via browser at [http://127.0.0.1:4000](http://127.0.0.1:4000)
+
+## Deploy your blog to GitHub Pages
+
+These instructions seem to change somewhat frequently so it's best to follow the developer's instructions [here](https://chirpy.cotes.page/posts/getting-started/#deploy-by-using-github-actions)
 
 ## Links
 > Jekyll [Home](https://jekyllrb.com), 
