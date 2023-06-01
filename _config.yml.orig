@@ -1,7 +1,5 @@
 # The Site Configuration
 
-future: true
-
 # Import the theme
 theme: jekyll-theme-chirpy
 
@@ -15,39 +13,39 @@ baseurl: ""
 lang: en
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: America/New_York
+timezone:
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Shawn Campbell DevOps Blog # the main title
+title: Chirpy # the main title
 
-tagline: Random musings, experiences, solutions, and iterations in the world of Cloud, IaC, CI/CD, and DevOps # it will display as the sub-title
+tagline: A text-focused Jekyll theme # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Shawn Campbell - blog of Cloud, IaC, CI/CD, and DevOps solutions and experiences.
+  A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://sb-campbell.github.io"
+url: ""
 
 github:
-  username: sb-campbell  # change to your github username
+  username: github_username # change to your github username
 
 twitter:
-  username: sjcampbl # change to your twitter username
+  username: twitter_username # change to your twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Shawn Campbell
-  # email: example@domain.com # change to your email address
+  name: your_full_name
+  email: example@domain.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username # change to your twitter homepage
     - https://github.com/username # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/shawnbcampbell
+    # - https://www.linkedin.com/in/username
 
 google_site_verification: # fill in to your verification string
 
@@ -72,8 +70,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-#theme_mode: # [light|dark]
-theme_mode: dark
+theme_mode: # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
@@ -83,7 +80,7 @@ theme_mode: dark
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://pbs.twimg.com/profile_images/549648557993521153/R1zNPvoS_400x400.jpeg
+avatar:
 
 # boolean type, the global switch for TOC in posts.
 toc: true
