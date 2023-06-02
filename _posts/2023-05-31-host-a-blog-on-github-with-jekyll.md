@@ -1,6 +1,6 @@
 ---
 title: Build A Static Blog Website Hosted On GitHub Pages With Jekyll
-date: 2023-06-01 12:00:00 -0500
+date: 2023-05-31 12:00:00 -0500
 categories: [How-to, GitHub]
 tags: [github,jekyll,blog]     # TAG names should always be lowercase
 ---
@@ -156,7 +156,7 @@ It is useful to use your Twitter profile image as the remote avatar for your blo
 * Test the edited URL in the browser
 * __NOTE__: This [Twitter API doc](https://developer.twitter.com/en/docs/twitter-api/v1/accounts-and-users/user-profile-images-and-banners) may be helpful if issues persist
 
-## Write you first blog post
+## Write your first blog post
 
 The Chirpy developer's own [wiki](https://chirpy.cotes.page/posts/write-a-new-post/) is the best place for details on how to create blog posts.
 
@@ -172,7 +172,7 @@ tags: [TAG]     # TAG names should always be lowercase
 ```
 * Write your blog article
 
-There are a lot of additional post config options available. See the developer's documentation above for details.
+There are a lot of additional post config options available. See the developer's documentation link above for details. Additionally, [GitHub has a nice markdown formatting wiki](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 ## Launch Jekyll locally to verify
 
