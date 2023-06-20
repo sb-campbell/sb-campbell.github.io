@@ -5,7 +5,7 @@ categories: [How-to, Kubernetes]
 tags: [kubernetes,terraform,helm,argocd]     # TAG names should always be lowercase
 ---
 
-# Overview
+## Overview
 
 ArgoCD is a Continuous Deployment/Delivery (CD) tool which ensures the Kubernetes state stays synchronized with the IaC definitions held in Git source control.
 
@@ -15,11 +15,11 @@ A use case to also employ Continuous Integration (CI) might utilize Jenkins to d
 
 Kubernetes Dashboard also provides information on the state of Kubernetes resources in your cluster and on any errors that may have occurred.
 
-# ArgoCD Install
+## ArgoCD Install
 
 There are a couple methods for installing ArgoCD into your Kubernetes cluster...
 
-## ArgoCD Installation via kubectl
+### ArgoCD Installation via kubectl
 
 Per the [docs](https://argo-cd.readthedocs.io/en/stable/getting_started/) ArgoCD can be installed via kubectl...
 
@@ -30,11 +30,11 @@ $ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/
 
 ArgoCD install via Kubernetes manifests is really not the preferred method of installation. It requires a couple of extra steps as reviewed in [this](https://www.opsmx.com/blog/argo-cd-installation-into-kubernetes-using-helm-or-manifest/) well-written blog post.
 
-## ArgoCD Installation via Helm
+### ArgoCD Installation via Helm
 
 Alternatively, installation via Helm is preferred. It can be accomplished either via the 'helm' command or via Terraform. 
 
-### ArgoCD Installation via 'helm' command
+#### ArgoCD Installation via 'helm' command
 
 First, we need to add the 'argo' repo to our helm installation...
 
@@ -186,7 +186,7 @@ argocd-secret                  Opaque               3      4m20s
 sh.helm.release.v1.argocd.v1   helm.sh/release.v1   1      4m20s
 ```
 
-### Cleanup of the Helm installed ArgoCD release
+#### Cleanup of the Helm installed ArgoCD release
 
 Query the installed Helm releases...
 
@@ -212,7 +212,7 @@ $ kubectl get secrets -n argocd
 No resources found in argocd namespace.
 ```
 
-### ArgoCD Helm Release Installation via Terraform
+#### ArgoCD Helm Release Installation via Terraform
 
 **NOTE**: This method actually uses Helm for the installation of ArgoCD, however, it uses Terraform IaC to automate and manage the installation.
 
@@ -333,7 +333,7 @@ Verify all pods are 'Running' and not in 'Crash Loop' or 'Pending' status...
 kubectl get pods -n argocd
 ```
 
-# Startup of and Login to the  ArgoCD Application Console
+## Startup of and Login to the  ArgoCD Application Console
 
 As described above, most of the relevant details for the installed ArgoCD application can be listed using 'helm status'...
 
